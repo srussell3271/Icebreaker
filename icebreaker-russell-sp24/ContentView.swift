@@ -1,18 +1,16 @@
 import SwiftUI
-import FirebaseCore
+import Firebase
 import FirebaseFirestore
-
 
 
 struct ContentView: View {
     let db = Firestore.firestore()
-    
     @State var txtFirstName: String = ""
     @State var txtLastName: String = ""
     @State var txtPrefName: String = ""
     @State var txtAnswer: String = ""
     @State var txtQuestion: String = ""
-    @State var questions = [Questions]
+    @State var questions = [Question]()
     
     var body: some View {
         

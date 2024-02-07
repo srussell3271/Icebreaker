@@ -1,10 +1,9 @@
 import SwiftUI
-import FirebaseFirestore
+import Firebase
 
 
 @main
 struct icebreaker_russell_sp24App: App {
-    FirebaseApp.configure()
     
     init(){
         let providerFactory = AppCheckDebugProviderFactory()
