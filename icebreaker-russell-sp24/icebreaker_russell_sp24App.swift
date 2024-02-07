@@ -1,14 +1,18 @@
-//
-//  icebreaker_russell_sp24App.swift
-//  icebreaker-russell-sp24
-//
-//  Created by Shannon Russell on 2/6/24.
-//
-
 import SwiftUI
+import FirebaseFirestore
+
 
 @main
 struct icebreaker_russell_sp24App: App {
+    FirebaseApp.configure()
+    
+    init(){
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+        
+        FirbaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
