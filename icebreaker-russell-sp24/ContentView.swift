@@ -6,6 +6,7 @@ struct ContentView: View {
     @State var txtLastName: String = ""
     @State var txtPrefName: String = ""
     @State var txtAnswer: String = ""
+    @State var txtQuestion: String = ""
 
     
     var body: some View {
@@ -27,7 +28,7 @@ struct ContentView: View {
             }){
                 Text("Security Question")
             }
-            
+            Text(txtQuestion)
             TextField("Answer", text: $txtAnswer)
             
             Button(action:{
