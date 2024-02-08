@@ -16,7 +16,8 @@ struct ContentView: View {
         VStack {
             Text("Icebreaker")
                 .font(.system(size: 40))
-                .bold()
+                .bold().italic()
+                .underline(color: Color.blue)
             Text("Built with SwiftUI")
             
             TextField("First Name", text: $txtFirstName)
