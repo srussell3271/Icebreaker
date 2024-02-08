@@ -37,7 +37,6 @@ struct ContentView: View {
                     writeStudentToFirebase()
                 }
                 resetTextFields()
-                
             })
             {
                 Text("Submit")

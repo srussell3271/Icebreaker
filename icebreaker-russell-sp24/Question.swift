@@ -6,9 +6,7 @@ class Question{
     
     init?(id: String, data: [String: Any]){
         guard let text = data["text"] as? String
-        else {
-            return nil
-        }
+        else { return nil }
         self.id = id
         self.text = text
     }

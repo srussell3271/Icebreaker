@@ -9,7 +9,6 @@ struct icebreaker_russell_sp24App: App {
         
         FirebaseApp.configure()
     }
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
